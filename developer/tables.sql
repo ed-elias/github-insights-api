@@ -25,7 +25,7 @@ create table commits
     constraint commits_cursor_uindex
         unique (`cursor`),
     constraint commit_user_id_fk
-        foreign key (user_id) references prisma.users (id)
+        foreign key (user_id) references users (id)
 );
 
 alter table commits
