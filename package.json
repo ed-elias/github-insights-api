@@ -1,0 +1,33 @@
+{
+  "name": "github-insights-worker",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ammezie/graphql-blog-cms-api/issues"
+  },
+  "homepage": "https://github.com/ammezie/graphql-blog-cms-api#readme",
+  "dependencies": {
+    "@google-cloud/pubsub": "^2.8.0",
+    "apollo-server-express": "^1.1.6",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "express-jwt": "^5.3.0",
+    "graphql": "^0.11.7",
+    "graphql-tools": "^2.3.0",
+    "jsonwebtoken": "^8.1.0",
+    "mysql2": "^1.4.2",
+    "sequelize": "^4.13.8",
+    "slugify": "^1.2.1"
+  },
+  "devDependencies": {}
+}
