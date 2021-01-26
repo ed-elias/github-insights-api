@@ -1,5 +1,5 @@
 {
-  "name": "github-insights-worker",
+  "name": "github-insights-api",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "bcrypt": "^5.0.0",
     "body-parser": "^1.18.2",
     "cors": "^2.8.5",
-    "dotenv": "^4.0.0",
+    "dotenv": "^8.2.0",
     "express": "^4.16.2",
     "express-jwt": "^5.3.0",
     "graphql": "^0.11.7",

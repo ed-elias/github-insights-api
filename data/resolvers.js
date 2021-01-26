@@ -29,15 +29,15 @@ const resolvers = {
         async fetchCommit(_, {id}) {
             return await Commit.findById(id);
         },
-        async getInsights(_, {sort}) {
-            let order = "commits";
-            if (["deletions", "additions", "commits"].includes(sort)) {
-                order = sort;
+        async getInsights(_, {orderBy}) {
+            let sort = "commits";
+            if (["deletions", "additions", "commits"].includes(orderBy)) {
+                sort = orderBy;
             }
             let stats = []
             stats.push(...await db.sequelize.query('SELECT SUM(additions) additions , SUM(deletions) deletions, COUNT(user_id) commits ,user_id FROM commits\n' +
                 'GROUP BY user_id\n' +
-                'ORDER BY ' + order + ' DESC LIMIT 20 ', {
+                'ORDER BY ' + sort + ' DESC LIMIT 20 ', {
                 // A function (or false) for logging your queries
                 // Will get called for every SQL query that gets sent
                 // to the server.

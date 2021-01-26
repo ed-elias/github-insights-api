@@ -37,7 +37,7 @@ const typeDefs = `
         fetchUser(id: Int!): User
         allCommits(limit: Int, offset:Int): [Commit]
         fetchCommit(id: Int!): Commit
-        getInsights(sortBy: String): [Insights]
+        getInsights(orderBy: String): [Insights]
     }
 `;
 
